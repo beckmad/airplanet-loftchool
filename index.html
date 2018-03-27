@@ -1,203 +1,198 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Airplanet</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
 <div class="wrapper">
-    <div class="header">
-        <div class="container">
-            <div class="header__top clearfix">
-                <div class="header__logo">
-                    <img src="img/logo_header.png" alt="Лого">
-                </div>
+    <header class="header">
+        <div class="container clearfix">
+            <div class="header__left">
+                <a href="#" class="logo__a">
+                        <img src="img/logo.png" alt="Лого" class="logo__img">
+                </a>
+            </div>
+            <div class="header__right">
                 <div class="header__contacts">
-                    <div class="header__info">
-                        <a href="tel:8 (800) 00-392-10">8 (800) 00-392-10</a><br>
-                        <a href="#">График работы</a>
-                    </div>
+                    <a href="tel:+78000039210" class="header__number">8 (800) 00-392-10</a><br>
+                    <a href="#" class="header__info">График работы</a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="main">
-        <div class="container">
-            <div class="main-top clearfix">
-                <div class="aside">
-                    <ul class="aside__list">
-                        <li class="aside__item"><a href="#">Отзывы</a></li>
-                        <li class="aside__item"><a href="#">Экипаж</a></li>
-                        <li class="aside__item"><a href="#">Главная</a></li>
+    </header>
+
+    <main class="main">
+        <div class="container clearfix">
+            <aside class="sidebar">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__main-icon nav__link nav__icon--link" href="">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__feed-icon nav__link nav__icon--link" href="">Отзывы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__team-icon nav__link nav__icon--link" href="">Экипаж</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="main__banner">
+                <img src="img/banner.png" alt="Баннер">
+            </div>
+
+            <section class="rate">
+                <h2>Тарифы</h2>
+                <div class="kind">
+                    <ul class="kind__list clearfix">
+                        <li class="kind__item">
+                            <div class="kind__head">
+                                <img src="" alt="">
+                            </div>
+                            <div class="kind__main">
+                                <h4>Стандарт</h4>
+                            </div>
+                            <div class="kind__footer">
+                                <p>Создан для вашего комфортного отдыха</p>
+                                <ul class="kind__second-list">
+                                    <li class="kind__second-item">Питание включено</li>
+                                    <li class="kind__second-item">Багаж (5 кг)</li>
+                                    <li class="kind__second-item">Детское кресло</li>
+
+                                </ul>
+                            </div>
+                            <div class="kind__price">
+                                <b>$19</b>
+                            </div>
+                        </li>
+                        <li class="kind__item">
+                            <div class="kind__head">
+                                <img src="" alt="">
+                            </div>
+                            <div class="kind__main">
+                                <h4>Премиум</h4>
+                            </div>
+                            <div class="kind__footer">
+                                <p>Для любителей хороших впечатлений</p>
+                                <ul class="kind__second-list">
+                                    <li class="kind__second-item">Питание включено</li>
+                                    <li class="kind__second-item">Багаж (10 кг)</li>
+                                    <li class="kind__second-item">Детское кресло</li>
+
+                                </ul>
+                            </div>
+                            <div class="kind__price">
+                                <b>$39</b>
+                            </div>
+                        </li>
+                        <li class="kind__item">
+                            <div class="kind__head">
+                                <img src="" alt="">
+                            </div>
+                            <div class="kind__main">
+                                <h4>Лакшери</h4>
+                            </div>
+                            <div class="kind__footer">
+                                <p>Всё самое лучшее и незабываемое</p>
+                                <ul class="kind__second-list">
+                                    <li class="kind__second-item">Питание включено</li>
+                                    <li class="kind__second-item">Багаж (15 кг)</li>
+                                    <li class="kind__second-item">Детское кресло</li>
+
+                                </ul>
+                            </div>
+                            <div class="kind__price">
+                                <b>$99</b>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-                <div class="banner">
-                    <img src="img/banner.png" alt="Баннер">
+            </section>
+            <section class="news">
+                <h2>Последние новости</h2>
+                <div class="offer">
+                    <ul class="offer__list">
+                        <li class="offer__item">
+                            <div class="offer__image">
+                                <img src="img/plane.jpg" alt="Самолет">
+                            </div>
+                            <div class="offer__content">
+                                <div class="offer__data">12.10.2016</div>
+                                <div class="offer__text">
+                                    <h4 class="offer__headline">Ночные перелёты дешевле!</h4>
+                                    <p class="offer__descrioption">Летящий в ночном небе самолет — зрелище загадочное и <br>
+                                        романтическое. Крылатая машина величественно плывет в вышине, мерцая разноцветными <br>
+                                        огнями, и почему-то кажется, что она наполнена удивительными людьми, спешащими <br>
+                                        далеко-далеко по очень важным делам.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="offer__item">
+                            <div class="offer__image">
+                                <img src="img/mountine.jpg" alt="Гора">
+                            </div>
+                            <div class="offer__content">
+                                <div class="offer__data">01.02.2016</div>
+                                <div class="offer__text">
+                                    <h4 class="offer__headline">Путешествие в Грузию стало доступнее</h4>
+                                    <p class="offer__descrioption"> Экскурсии по Грузии в 2017 году от русских гидов: самые <br>
+                                        интересные маршруты в Грузии от профессиональных гидов. Обзорные, пешеходные, <br>
+                                        автомобильные, тематические экскурсии по интересным городам и курортам Грузии. Не <br>
+                                        пропустите такую возможность!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="offer__item">
+                            <div class="offer__image">
+                                <img src="img/boy.jpg" alt="Мальчик">
+                            </div>
+                            <div class="offer__content">
+                                <div class="offer__data">22.12.2015</div>
+                                <div class="offer__text">
+                                    <h4 class="offer__headline">Детские авиабилеты доступны для бизнес-класса</h4>
+                                    <p class="offer__descrioption"> Путешествие на самолете с детьми - небольшое испытание <br>
+                                        для родителей. Но это не экстремальное приключение, а обычный цивилизованный поход. <br>
+                                        Тем более, различные авиакомпании стараются помочь скидками на детские авиабилеты, <br>
+                                        специальным питанием и другими услугами на борту лайнера.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        <section class="rate">
-            <h2>Тарифы</h2>
-            <div class="kind">
-                <ul class="kind__list">
-                    <li class="kind__item">
-                        <div class="kind__head">
-                            <img src="" alt="">
-                        </div>
-                        <div class="kind__main">
-                            <h4>Стандарт</h4>
-                        </div>
-                        <div class="kind__footer">
-                            <p>Создан для вашего комфортного отдыха</p>
-                            <ul class="kind__second-list">
-                                <li class="kind__second-item">Питание включено</li>
-                                <li class="kind__second-item">Багаж (5 кг)</li>
-                                <li class="kind__second-item">Детское кресло</li>
+            </section>
 
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="kind__item">
-                        <div class="kind__head">
-                            <img src="" alt="">
-                        </div>
-                        <div class="kind__main">
-                            <h4>Премиум</h4>
-                        </div>
-                        <div class="kind__footer">
-                            <p>Для любителей хороших впечатлений</p>
-                            <ul class="kind__second-list">
-                                <li class="kind__second-item">Питание включено</li>
-                                <li class="kind__second-item">Багаж (10 кг)</li>
-                                <li class="kind__second-item">Детское кресло</li>
-
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="kind__item">
-                        <div class="kind__head">
-                            <img src="" alt="">
-                        </div>
-                        <div class="kind__main">
-                            <h4>Лакшери</h4>
-                        </div>
-                        <div class="kind__footer">
-                            <p>Всё самое лучшее и незабываемое</p>
-                            <ul class="kind__second-list">
-                                <li class="kind__second-item">Питание включено</li>
-                                <li class="kind__second-item">Багаж (15 кг)</li>
-                                <li class="kind__second-item">Детское кресло</li>
-
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
-
-        </section>
-        <section class="news">
-            <h2>Последние новости</h2>
-            <div class="offer">
-                <ul class="offer__list">
-                    <li class="offer__item">
-                        <div class="after-image clearfix">
-                    <div class="offer__image">
-                        <img src="img/plane.jpg" alt="Самолет">
-                    </div>
-                    <div class="offer__content">
-                        <div class="offer__data">12.10.2016</div>
-                        <div class="offer__text">
-                            <h4 class="offer__headline">Ночные перелёты дешевле!</h4>
-                            <p class="offer__descrioption">Летящий в ночном небе самолет — зрелище загадочное и <br>
-                                романтическое. Крылатая машина величественно плывет в вышине, мерцая разноцветными <br>
-                                огнями, и почему-то кажется, что она наполнена удивительными людьми, спешащими <br>
-                                далеко-далеко по очень важным делам.
-                            </p>
-                        </div>
-                    </div>
-                        </div>
-                    </li>
-                    <li class="offer__item">
-                        <div class="after-image clearfix">
-                        <div class="offer__image">
-                            <img src="img/mountine.jpg" alt="Гора">
-                        </div>
-                        <div class="offer__content">
-                            <div class="offer__data">01.02.2016</div>
-                            <div class="offer__text">
-                                <h4 class="offer__headline">Путешествие в Грузию стало доступнее</h4>
-                                <p class="offer__descrioption"> Экскурсии по Грузии в 2017 году от русских гидов: самые <br>
-                                    интересные маршруты в Грузии от профессиональных гидов. Обзорные, пешеходные, <br>
-                                    автомобильные, тематические экскурсии по интересным городам и курортам Грузии. Не <br>
-                                    пропустите такую возможность!
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                    </li>
-                    <li class="offer__item">
-                        <div class="after-image clearfix">
-                        <div class="offer__image">
-                            <img src="img/boy.jpg" alt="Мальчик">
-                        </div>
-                        <div class="offer__content">
-                            <div class="offer__data">22.12.2015</div>
-                            <div class="offer__text">
-                                <h4 class="offer__headline">Детские авиабилеты доступны для бизнес-класса</h4>
-                                <p class="offer__descrioption"> Путешествие на самолете с детьми - небольшое испытание <br>
-                                    для родителей. Но это не экстремальное приключение, а обычный цивилизованный поход. <br>
-                                    Тем более, различные авиакомпании стараются помочь скидками на детские авиабилеты, <br>
-                                    специальным питанием и другими услугами на борту лайнера.
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                    </li>
-
-
-                </ul>
-            </div>
-        </section>
-
-            <div class="potom-sdelat"></div>
-
-
-
-
-
-
+            <!--todo ne znayu kak eto delat, pomogite, pleas-->
 
         </div>
+    </main>
 
-
-    </div>
-
-<div class="footer">
-    <div class="container">
-        <div class="footer-bottom clearfix">
-        <div class="footer__copyright">
-            <p>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">
                 Сделано с любовью и старанием <br>
-                на курсе «HTML + CSS» в LoftSchool. <br>
-                Автор работы: Прохладов Вадим <br>
+                на курсе «HTML + CSS» в <a href="#">LoftSchool.</a> <br>
+                Автор работы: <b>Прохладов Вадим </b>
             </p>
-        </div>
-        <div class="footer__logo">
-            <img src="img/logo_header.png" alt="Лого">
-        </div>
 
-        <div class="footer__social">
+            <div class="footer__logo">
+                <a href="#"><img src="img/logo.png" alt="Лого"></a>
+            </div>
 
+            <div class="footer__social">
+                <!--todo ne znayu kak eto delat, pomogite, pleas-->
+                awawdawdwadwadawd <br>
+                awdawdawdawdadw <br>
+                awdadwawdawdadwawd <br>
+            </div>
         </div>
-        </div>
-    </div>
-</div>
-
+    </footer>
 </div>
 
 </body>
