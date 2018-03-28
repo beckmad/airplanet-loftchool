@@ -8,6 +8,7 @@
 .container {
     width: 1100px;
     margin: 0 auto;
+    border: 1px solid grey;
 }
 
 .clearfix::after {
@@ -64,34 +65,68 @@ a.header__info:hover {
 
 /*----------------------------------------------------------------------------------------------------------------MAIN*/
 
+ul {
+    list-style: none;
+
+}
+
 .sidebar {
     float: left;
     list-style: none;
     width: 199px;
     box-sizing:border-box;
+    border: 1px solid khaki;
+    padding: 0px;
+    margin: 0;
+
 }
 
 .nav__list {
-    list-style: none;
+    margin-top: 28px;
+    margin-left: 15px;
+    padding: 0;
+    border: 1px solid red;
+
+}
+
+.nav__item a {
+    margin: 0;
+    padding: 0 0 0 37px;
+    border: 1px solid green;
+
 }
 
 .nav__icon--link {
-    display: inline-block;
+    padding: 0;
+
 }
 
 .nav__main-icon {
-    background: url("/img/icons/main_icon.jpg") no-repeat 0 0;
+    background: url("../img/icons/main_icon.png") no-repeat 0 0;
     border: 1px solid rebeccapurple;
 }
+.nav__main-icon:hover {
+    background: url("../img/icons/main_icon_hover.png") no-repeat 0 0;
+}
+
+
 
 .nav__feed-icon {
-    background: url("/img/icons/feed_icon.png") no-repeat 0 0;
+    background: url("../img/icons/feed_icon.png") no-repeat 0 0;
     border: 1px solid rebeccapurple;
 }
+.nav__feed-icon:hover {
+    background: url("../img/icons/feed_icon_hover.png") no-repeat 0 0;
+}
+
+
 
 .nav__team-icon {
-    background: url("/img/icons/feed_icon.png") no-repeat 0 0;
+    background: url("../img/icons/feed_icon.png") no-repeat 0 0;
     border: 1px solid #99343e;
+}
+.nav__team-icon:hover {
+    background: url("../img/icons/feed_icon_hover.png") no-repeat 0 0;
 }
 
 .nav__link {
@@ -104,7 +139,12 @@ a.header__info:hover {
     text-decoration: none;
 }
 
+.nav__link:hover {
+    color: #221f1f;
+}
+
 .main__banner {
+    margin-top: 13px;
     float: right;
 }
 
@@ -114,7 +154,6 @@ a.header__info:hover {
 }
 
 .kind__list {
-    list-style: none;
     border: 1px solid red;
 }
 
@@ -128,7 +167,6 @@ a.header__info:hover {
 }
 
 .offer__list {
-    list-style: none;
     border: 1px solid darkgreen;
 }
 
@@ -181,4 +219,5 @@ a.header__info:hover {
     width: 30%;
     border: 1px solid blue;
 }
+
 
