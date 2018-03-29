@@ -12,6 +12,13 @@ body {
     min-height:100%;
     height:auto!important;
     overflow:hidden;
+    min-width: 1120px;
+}
+.wrapper:after {
+    content: "";
+    display: block;
+    height: 50px;
+
 }
 
 .header {
@@ -22,6 +29,7 @@ body {
     width: 1100px;
     margin: 0 auto;
     border: 1px solid grey;
+    box-sizing: border-box;
 }
 
 .clearfix::after {
@@ -80,18 +88,29 @@ a.header__info:hover {
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 
 }
 
 .sidebar {
     float: left;
     list-style: none;
-    width: 199px;
+    width: 198px;
+    min-height: 299px;
     box-sizing:border-box;
     border: 1px solid khaki;
     padding: 0px;
     margin: 0;
+}
 
+.main__banner {
+    margin-top: 13px;
+    float: right;
+    width: 900px;
+    min-height: 299px;
+    box-sizing: border-box;
+    border: 1px solid darkgoldenrod;
 }
 
 .nav__list {
@@ -99,20 +118,16 @@ ul {
     margin-left: 15px;
     padding: 0;
     border: 1px solid red;
-
 }
 
 .nav__item a {
     margin: 0;
     padding: 0 0 0 37px;
     border: 1px solid green;
-
-
 }
 
 .nav__icon--link {
     padding: 0;
-
 }
 
 .nav__main-icon {
@@ -157,55 +172,117 @@ ul {
     color: #221f1f;
 }
 
-.main__banner {
-    margin-top: 13px;
-    float: right;
-}
-
 
 /*--------------------------------------------------------------------------------------------------------SECTION.rate*/
 
 
 .rate {
-    padding-left: 194px;
     border: 1px solid olivedrab;
     clear: both;
-}
-
-
-.rate__list {
-    border: 1px solid red;
-    margin: 0;
     padding: 0;
 }
 
-.rate__item {
-    float: left;
-    box-sizing: border-box;
-    width: 250px;
-    height: 456px;  /*потом нужно удалить*/
-    border: 1px solid green;
-
-
-}
-
 .rate__headline {
+    margin-left: 194px;
+    margin-right: 206px;
     border: 1px solid maroon;
-    margin-top: 16px;
+    margin-top: 0;
     font-family: "Roboto";
     font-weight: bold;
     font-size: 49px;
 
 }
 
-.rate__head {
+.rate__list {
+    border: 1px solid red;
+    margin-left: 199px;
+}
+
+.rate__item {
+    float: left;
+    box-sizing: border-box;
+    width: 250px;
+    min-height: 456px;
+    margin-left: 20px;
+
+}
+
+.rate__item:hover {
+    border: 1px solid rgb(232, 233, 237);
+    border-radius: 5px;
+}
+
+.rate__item:first-child {
+    margin-left: 0;
+}
+
+.rate__head-1 {
+    width: 72px;
+    height: 72px;
+    margin: 41px auto 0;
+    border-radius: 50%;
+    /*Папка img на 1 уровегь выше*/
+    background: url("../img/icons/rate/flower.png") rgb(75, 115, 181) no-repeat center center;
+}
+
+.rate__head-2 {
+    width: 72px;
+    height: 72px;
+    margin: 41px auto 0;
+    border-radius: 50%;
+    background: url("../img/icons/rate/star.png") rgb(75, 115, 181) no-repeat center center;
+}
+
+.rate__head-3 {
     border: 1px solid darkgreen;
     width: 72px;
     height: 72px;
     margin: 41px auto 0;
+    border-radius: 50%;
+    background: url("../img/icons/rate/painter.png") rgb(75, 115, 181) no-repeat center center;
 }
 
-.rate__head img {
+.rate__main {
+    border: 1px solid black;
+}
+.rate__main h4 {
+    font-size: 12px;
+    font-family: "Roboto";
+    color: rgb(33, 33, 33);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 4.767;
+    text-align: center;
+}
+
+.rate__footer p {
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(34, 31, 31);
+    line-height: 1.667;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.rate__second-list .rate__second-item {
+    font-size: 20px;
+    font-family: "Roboto";
+    color: rgb(34, 31, 31);
+    line-height: 1.667;
+    text-align: center;
+    font-weight: lighter;
+    list-style: initial;
+}
+
+.rate__price {
+    font-size: 54px;
+    font-family: "Roboto";
+    color: rgb(32, 32, 32);
+    vertical-align: sub;
+    line-height: 3.383;
+    text-align: center;
+    border: 1px solid ;
+    font-weight: lighter;
 
 }
 
@@ -238,6 +315,8 @@ ul {
 /*--------------------------------------------------------------------------------------------------------------FOOTER*/
 .footer{
     background-color: #4b73b5;
+    margin-top: -50px;
+
 }
 
 .footer__copyright {
@@ -246,7 +325,6 @@ ul {
     font-family: "Roboto";
     color: rgb(255, 255, 255);
     line-height: 1.286;
-    width: 30%;
     border: 1px solid black;
 }
 
@@ -284,6 +362,7 @@ ul {
 .footer__share .social:last-child {
     margin-right: 0;
 }
+
 
 
 
