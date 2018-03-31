@@ -1,7 +1,5 @@
 /*HEADER*/
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
-
 *,
 *::after,
 *::before {
@@ -24,7 +22,7 @@ body {
     min-height: 100%;
     height: auto !important;
     overflow: hidden;
-    min-width: 1120px;
+    min-width: 1100px;
 }
 
 .wrapper:after {
@@ -42,6 +40,7 @@ body {
     width: 1100px;
     margin: 0 auto;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 .clearfix::after {
@@ -113,6 +112,8 @@ a.header__info:hover {
     float: right;
     width: 900px;
     box-sizing: border-box;
+    border: 1px dotted green;
+    margin-bottom: 48px;
 }
 
 .main__banner {
@@ -276,10 +277,6 @@ a.header__info:hover {
 }
 
 /*SECTION.news*/
-.main__content {
-    padding: 0;
-    margin: 0;
-}
 
 .news {
 }
@@ -299,8 +296,15 @@ a.header__info:hover {
 }
 
 .offer__item {
-    margin: 0;
+    margin: 30px 0 0 0;
+    padding: 0;
+    border-bottom: 2px solid rgb(245, 245, 245);
 
+
+
+}
+.offer__item:last-child {
+    border-bottom: 2px solid transparent;
 }
 
 .offer__image {
@@ -316,9 +320,9 @@ a.header__info:hover {
 
 .offer__content {
     float: left;
-    margin-left: 12px;
     width: 658px;
     box-sizing: border-box;
+    margin: 0 0 0 12px;
 }
 
 .offer__data {
@@ -340,7 +344,20 @@ a.header__info:hover {
     line-height: 1.5;
 }
 
+.pagination {
+    width: 500px;
+    height: 25px;
+    background:red;
+    clear: both;
+    margin: 0 auto 60px;
+    /*не получается маргином задать высоту. Задал mrg-bot main__content*/
+
+
+}
+
 /*FOOTER*/
+
+
 
 .footer {
     background-color: #4b73b5;
@@ -420,3 +437,31 @@ a.header__info:hover {
 .social-email {
     background: url("../img/icons/social/email.png") no-repeat rgb(210, 222, 243) center center;
 }
+
+/*review*/
+
+.question {
+    min-height: 170px;
+    width: 1100px;
+    background: url("../img/content/question.png") no-repeat 0 0;
+    clear: both;
+}
+
+.question__paragraph {
+    display: inline-block;
+    border: 1px solid red;
+    width: 630px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    margin-top: 48px;
+    margin-left: 230px;
+}
+
+.question__link {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
