@@ -110,13 +110,13 @@ a.header__info:hover {
 }
 
 .main__content {
-    margin-top: 13px;
     float: right;
     width: 900px;
     box-sizing: border-box;
 }
 
 .main__banner {
+    margin-top: 13px;
     min-height: 299px;
     box-sizing: border-box;
 }
@@ -191,9 +191,8 @@ a.header__info:hover {
 
 .rate__list {
     list-style: none;
-    margin: 0;
+    margin: 17px 0 0 0;
     padding: 0;
-    /*margin-left: 199px;*/
 }
 
 .rate__item {
@@ -202,11 +201,15 @@ a.header__info:hover {
     width: 250px;
     min-height: 456px;
     margin-left: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
 }
 
 .rate__item:hover {
-    border-color: rgb(232, 233, 237);
+    border: 1px solid rgb(232, 233, 237);
     border-radius: 5px;
+
+
 }
 
 .rate__item:first-child {
