@@ -1,21 +1,32 @@
 /*HEADER*/
 
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
 html, body {
     width: 100%;
     height: 100%;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     min-width: 1100px;
 }
 
-.wrapper{
-    position:relative;
-    min-height:100%;
-    height:auto!important;
-    overflow:hidden;
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    overflow: hidden;
     min-width: 1120px;
 }
+
 .wrapper:after {
     content: "";
     display: block;
@@ -30,7 +41,6 @@ body {
 .container {
     width: 1100px;
     margin: 0 auto;
-    border: 1px solid grey;
     box-sizing: border-box;
 }
 
@@ -64,7 +74,6 @@ body {
 }
 
 a.header__number {
-    font-family: 'Roboto';
     font-size: 21px;
     font-weight: bold;
     text-transform: uppercase;
@@ -78,7 +87,6 @@ a.header__number:hover {
 
 a.header__info {
     font-size: 14px;
-    font-family: 'Roboto';
     font-weight: bold;
     color: rgba(255, 255, 255, 0.7);
     text-decoration: underline;
@@ -92,27 +100,23 @@ a.header__info:hover {
 
 /*MAIN*/
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-}
-
 .sidebar {
     float: left;
-    list-style: none;
     width: 198px;
     min-height: 299px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-.main__banner {
+.main__content {
     margin-top: 13px;
     float: right;
     width: 900px;
+    box-sizing: border-box;
+}
+
+.main__banner {
     min-height: 299px;
     box-sizing: border-box;
 }
@@ -121,6 +125,7 @@ ul {
     margin-top: 28px;
     margin-left: 15px;
     padding: 0;
+    list-style: none;
 }
 
 .nav__item a {
@@ -136,31 +141,29 @@ ul {
     background: url("../img/icons/sidebar/main_icon.png") no-repeat left center;
 
 }
+
 .nav__main-icon:hover {
     background: url("../img/icons/sidebar/main_icon_hover.png") no-repeat left center;
 }
 
-
-
 .nav__feed-icon {
     background: url("../img/icons/sidebar/feed_icon.png") no-repeat left center;
 }
+
 .nav__feed-icon:hover {
     background: url("../img/icons/sidebar/feed_icon_hover.png") no-repeat left center;
 }
 
-
-
 .nav__team-icon {
     background: url("../img/icons/sidebar/team_icon.png") no-repeat left center;
 }
+
 .nav__team-icon:hover {
     background: url("../img/icons/sidebar/team_icon_hover.png") no-repeat left center;
 }
 
 .nav__link {
     font-size: 12px;
-    font-family: "Roboto";
     color: rgb(75, 115, 181);
     font-weight: bold;
     text-transform: uppercase;
@@ -172,29 +175,25 @@ ul {
     color: #221f1f;
 }
 
-
 /*SECTION.rate*/
 
-
 .rate {
-    border: 1px solid olivedrab;
     clear: both;
     padding: 0;
 }
 
 .rate__headline {
-    margin-left: 194px;
-    border: 1px solid maroon;
-    margin-top: 0;
-    font-family: "Roboto";
+    margin: 0;
     font-weight: bold;
     font-size: 49px;
 
 }
 
 .rate__list {
-    border: 1px solid red;
-    margin-left: 199px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*margin-left: 199px;*/
 }
 
 .rate__item {
@@ -203,11 +202,10 @@ ul {
     width: 250px;
     min-height: 456px;
     margin-left: 20px;
-
 }
 
 .rate__item:hover {
-    border: 1px solid rgb(232, 233, 237);
+    border-color: rgb(232, 233, 237);
     border-radius: 5px;
 }
 
@@ -215,37 +213,31 @@ ul {
     margin-left: 0;
 }
 
-.rate__head-1 {
+.rate__head {
     width: 72px;
     height: 72px;
     margin: 41px auto 0;
     border-radius: 50%;
+    background: rgb(75, 115, 181) no-repeat center center;
+}
 
-    background: url("../img/icons/rate/flower.png") rgb(75, 115, 181) no-repeat center center;
+.rate__head-1 {
+    background-image: url("../img/icons/rate/flower.png");
 }
 
 .rate__head-2 {
-    width: 72px;
-    height: 72px;
-    margin: 41px auto 0;
-    border-radius: 50%;
-    background: url("../img/icons/rate/star.png") rgb(75, 115, 181) no-repeat center center;
+    background-image: url("../img/icons/rate/star.png");
 }
 
 .rate__head-3 {
-    width: 72px;
-    height: 72px;
-    margin: 41px auto 0;
-    border-radius: 50%;
-    background: url("../img/icons/rate/painter.png") rgb(75, 115, 181) no-repeat center center;
+    background-image: url("../img/icons/rate/painter.png");
 }
 
 .rate__main {
-    border: 1px solid black;
 }
+
 .rate__main h4 {
     font-size: 12px;
-    font-family: "Roboto";
     color: rgb(33, 33, 33);
     font-weight: bold;
     text-transform: uppercase;
@@ -255,17 +247,14 @@ ul {
 
 .rate__footer p {
     font-size: 18px;
-    font-family: "Roboto";
     color: rgb(34, 31, 31);
     line-height: 1.667;
     text-align: center;
-    font-weight: lighter;
+    font-weight: 200;
 }
-
 
 .rate__second-list .rate__second-item {
     font-size: 20px;
-    font-family: "Roboto";
     color: rgb(34, 31, 31);
     line-height: 1.667;
     text-align: center;
@@ -275,48 +264,48 @@ ul {
 
 .rate__price {
     font-size: 54px;
-    font-family: "Roboto";
     color: rgb(32, 32, 32);
     vertical-align: sub;
     line-height: 3.383;
     text-align: center;
-    border: 1px solid ;
     font-weight: lighter;
 
 }
 
 /*SECTION.news*/
+.main__content {
+    padding: 0;
+    margin: 0;
+}
 
 .news {
-    border: 1px solid orangered;
 }
+
 .news__headline {
-    border: 1px solid gold;
     font-size: 49px;
-    font-family: "Roboto";
     color: rgb(34, 31, 31);
     font-weight: bold;
-    margin: 59px 0 0 199px;
+    margin: 59px 0 0 0;
 }
 
 .offer__list {
-    border: 1px solid darkgreen;
     margin-top: 60px;
-    margin-left: 196px;
+    margin-left: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .offer__item {
-    border: 1px solid darkblue;
     margin: 0;
 
 }
 
 .offer__image {
     float: left;
-    border: 1px solid darkslategray;
     width: 184px;
     box-sizing: border-box;
 }
+
 .offer__image img {
     border-radius: 50%;
 
@@ -324,7 +313,6 @@ ul {
 
 .offer__content {
     float: left;
-    border: 1px solid darkmagenta;
     margin-left: 12px;
     width: 658px;
     box-sizing: border-box;
@@ -332,33 +320,26 @@ ul {
 
 .offer__data {
     font-size: 14px;
-    font-family: "Roboto";
     color: #656464;
     text-align: left;
     font-weight: lighter;
 }
 
 .offer__headline {
-    font-family: "Roboto";
     font-weight: bold;
     font-size: 18px;
     color: #221f1f;
 }
 
 .offer__description {
-    font-family: "Roboto";
     font-size: 18px;
     font-weight: lighter;
     line-height: 1.5;
 }
 
-
-
-
-
 /*FOOTER*/
 
-.footer{
+.footer {
     background-color: #4b73b5;
     margin-top: -75px;
     min-height: 75px;
@@ -368,12 +349,10 @@ ul {
 .footer__copyright {
     float: left;
     font-size: 14px;
-    font-family: "Roboto";
     color: rgb(255, 255, 255);
     line-height: 1.286;
     margin-top: 14px;
     margin-left: 19px;
-    border: 1px solid black;
 }
 
 .footer__copyright a {
@@ -385,7 +364,6 @@ ul {
 
 .footer__logo {
     height: 37px;
-    border: 1px solid yellow;
     margin-left: 236px;
     margin-top: 20px;
     width: 121px;
@@ -397,20 +375,14 @@ ul {
     float: right;
     margin-right: 20px;
     margin-top: 20px;
-    border: 1px solid blue;
 }
 
 .footer__share b {
     display: block;
     font-size: 14px;
-    font-family: "Roboto";
     color: rgb(255, 255, 255);
     font-weight: bold;
     margin-bottom: 10px;
-}
-
-.footer__share a {
-
 }
 
 .footer__share .social {
@@ -420,37 +392,28 @@ ul {
     vertical-align: middle;
     margin-right: 10px;
     border-radius: 50%;
-    border: 1px solid orange;
+    opacity: 0.7;
 }
-
 .footer__share .social:last-child {
     margin-right: 0;
+}
+.footer__share .social:hover {
+    opacity: 1;
 }
 
 
 .social-vk {
     background: url("../img/icons/social/vk.png") no-repeat rgb(210, 222, 243) center center;
 }
-
-/*
 .social-fb {
     background: url("../img/icons/social/fb.png") no-repeat rgb(210, 222, 243) center center;
 }
-
-.social-google {
-    background: url("../img/icons/social/google.png") no-repeat rgb(210, 222, 243) center center;
-}
-
 .social-twitter {
     background: url("../img/icons/social/twitter.png") no-repeat rgb(210, 222, 243) center center;
 }
-
+.social-google {
+    background: url("../img/icons/social/google.png") no-repeat rgb(210, 222, 243) center center;
+}
 .social-email {
     background: url("../img/icons/social/email.png") no-repeat rgb(210, 222, 243) center center;
 }
-
-*/
-
-
-
-
