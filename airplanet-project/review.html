@@ -11,6 +11,7 @@
 </head>
 <body>
 <div class="wrapper">
+    <!--header-->
     <header class="header">
         <div class="container clearfix">
             <div class="header__left">
@@ -26,8 +27,10 @@
             </div>
         </div>
     </header>
+    <!--content-->
     <main class="main">
         <div class="container clearfix">
+            <!--sidebar-->
             <aside class="sidebar">
                 <nav class="nav">
                     <ul class="nav__list">
@@ -43,8 +46,15 @@
                     </ul>
                 </nav>
             </aside>
-
             <div class="main__content">
+                <!--breadcrumb-->
+                <nav class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="#">Главная</a></li>
+                        <li class="breadcrumbs__item">Отзывы</li>
+                    </ul>
+                </nav>
+                <!--section-->
                 <section class="news">
                     <h1 class="news__headline">Отзывы</h1>
                     <div class="offer">
@@ -119,13 +129,26 @@
                     </div>
                 </section>
 
+                <!--pagination-->
+                <div class="pagination">
+                    <p class="pagination__paragraph">Страница 1 из 7</p>
+                    <ul class="pagination__list">
+                        <li class="pagination__item"><a href="">&lt;</a></li>
+                        <li class="pagination__item"><a href="">1</a></li>
+                        <li class="pagination__item"><a href="">2</a></li>
+                        <li class="pagination__item"><a href="">3</a></li>
+                        <li class="pagination__item"><a href="">4</a></li>
+                        <li class="pagination__item"><a href="">5</a></li>
+                        <li class="pagination__item"><a href="">6</a></li>
+                        <li class="pagination__item"><a href="">7</a></li>
+                        <li class="pagination__item"><a href="">&gt;</a></li>
+                    </ul>
+                </div>
 
             </div>
 
-            <!--pagination-->
-            <div class="pagination">
 
-            </div>
+
 
 
             <div class="question">
@@ -137,29 +160,52 @@
                 </p>
             </div>
 
+
+            <div class="review">
+                <h2 class="review__headline">Оставить отзыв</h2>
+                <form class="review__form" action="" method="post" >
+                    <label for="name">Ваше имя</label><br>
+                    <input class="review__input-name" type="text" id="name" name="name" value="Андрей">
+
+                    <label for="surname">Ссылка на профиль VK</label><br>
+                    <input class="review__input-surname" type="text" id="surname" name="surname" value="vk.com/example"><br>
+
+                    <label for="comment">Текст отзыва</label><br>
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+                    <label>Отображать фото в отзыве?
+                    <input type="radio" name="choice">
+                    <input type="radio" name="choice">
+                    </label>
+                </form>
+            </div>
+
         </div>
     </main>
+
 </div>
 
 <footer class="footer">
     <div class="container clearfix">
-        <p class="footer__copyright">
-            Сделано с любовью и старанием <br>
+        <div class="footer__copyright">
+            <p>Сделано с любовью и старанием <br>
             на курсе «HTML + CSS» в <a href="#">LoftSchool.</a> <br>
-            Автор работы: <b>Прохладов Вадим </b>
-        </p>
+                Автор работы: <b>Прохладов Вадим </b></p>
+        </div>
 
         <div class="footer__logo">
             <a href="#"><img src="img/logo/logo.png" alt="Лого"></a>
         </div>
 
         <div class="footer__share">
-            <b>Наши социальные сети</b>
-            <a href="#" class="social social-vk"></a>
-            <a href="#" class="social social-fb"></a>
-            <a href="#" class="social social-twitter"></a>
-            <a href="#" class="social social-google"></a>
-            <a href="#" class="social social-email"></a>
+            <div class="social-title">Наши социальные сети</div>
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="social social-vk"></a></li>
+                <li class="footer__item"><a href="#" class="social social-fb"></a></li>
+                <li class="footer__item"><a href="#" class="social social-twitter"></a></li>
+                <li class="footer__item"><a href="#" class="social social-google"></a></li>
+                <li class="footer__item"><a href="#" class="social social-email"></a></li>
+            </ul>
         </div>
     </div>
 </footer>

@@ -11,6 +11,7 @@
 </head>
 <body>
 <div class="wrapper">
+    <!--header-->
     <header class="header">
         <div class="container clearfix">
             <div class="header__left">
@@ -26,9 +27,10 @@
             </div>
         </div>
     </header>
-
+    <!--content-->
     <main class="main">
         <div class="container clearfix">
+            <!--sidebar-->
             <aside class="sidebar">
                 <nav class="nav">
                     <ul class="nav__list">
@@ -48,7 +50,7 @@
                 <div class="main__banner">
                     <img src="img/content/banner.png" alt="Баннер">
                 </div>
-
+                <!--first_section-->
                 <section class="rate">
                     <h2 class="rate__headline">Тарифы</h2>
                         <ul class="rate__list clearfix">
@@ -114,6 +116,7 @@
                             </li>
                         </ul>
                 </section>
+                <!--second_section-->
                 <section class="news">
                 <h2 class="news__headline">Последние новости</h2>
                 <div class="offer">
@@ -172,12 +175,25 @@
                     </ul>
                 </div>
             </section>
+
+                <!--pagination-->
+                <div class="pagination">
+                    <p class="pagination__paragraph">Страница 1 из 7</p>
+                    <ul class="pagination__list">
+                        <li class="pagination__item"><a href="">&lt;</a></li>
+                        <li class="pagination__item"><a href="">1</a></li>
+                        <li class="pagination__item"><a href="">2</a></li>
+                        <li class="pagination__item"><a href="">3</a></li>
+                        <li class="pagination__item"><a href="">4</a></li>
+                        <li class="pagination__item"><a href="">5</a></li>
+                        <li class="pagination__item"><a href="">6</a></li>
+                        <li class="pagination__item"><a href="">7</a></li>
+                        <li class="pagination__item"><a href="">&gt;</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <!--pagination-->
-            <div class="pagination">
 
-            </div>
 
         </div>
     </main>
@@ -197,15 +213,19 @@
         </div>
 
         <div class="footer__share">
-            <b>Наши социальные сети</b>
-            <a href="#" class="social social-vk"></a>
-            <a href="#" class="social social-fb"></a>
-            <a href="#" class="social social-twitter"></a>
-            <a href="#" class="social social-google"></a>
-            <a href="#" class="social social-email"></a>
+            <div class="social-title">Наши социальные сети</div>
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="social social-vk"></a></li>
+                <li class="footer__item"><a href="#" class="social social-fb"></a></li>
+                <li class="footer__item"><a href="#" class="social social-twitter"></a></li>
+                <li class="footer__item"><a href="#" class="social social-google"></a></li>
+                <li class="footer__item"><a href="#" class="social social-email"></a></li>
+            </ul>
         </div>
     </div>
 </footer>
+
+
 
 </body>
 </html>
