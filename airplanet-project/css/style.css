@@ -40,7 +40,6 @@ body {
     width: 1100px;
     margin: 0 auto;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 .clearfix::after {
@@ -112,7 +111,6 @@ a.header__info:hover {
     float: right;
     width: 900px;
     box-sizing: border-box;
-    border: 1px dotted green;
     margin-bottom: 48px;
 }
 
@@ -347,30 +345,29 @@ a.header__info:hover {
 /*PAGINATION*/
 
 .pagination {
-    background:red;
     clear: both;
     margin: 0 auto 60px;
     font-size: 0;
+    height: 25px;
     /*не получается маргином задать высоту. Задал mrg-bot main__content*/
 }
 
 .pagination__paragraph {
     display: inline-block;
-    background: #000;
     font-size: 14px;
     font-weight: 300;
     color: #656464;
     font-style: italic;
     width: 120px;
-    margin: 0 0 0 220px;
-    padding: 0;
+    margin-left:220px;
+    margin-top: auto;
+    margin-bottom: auto;
 
 }
 .pagination__list {
     list-style: none;
     margin: 0;
     padding: 0;
-    border: 1px solid yellow;
     display: inline-block;
 
 
@@ -381,14 +378,32 @@ a.header__info:hover {
 }
 
 .pagination__item a {
-    border: 1px solid green;
     font-weight: bold;
     font-size: 14px;
     width: 25px;
     height: 25px;
     display: block;
     text-decoration: none;
-    padding: 50% 50%;
+    padding: 5px 8px;
+    color: #221f1f;
+}
+.pagination__item:hover a{
+    color: #4b73b5;
+}
+
+.pagination__item:first-child a {
+    color: #000000;
+    opacity: .3;
+}
+
+.pagination__item:nth-child(2) a {
+    border-radius: 3px;
+    background-color: rgb(75, 115, 181);
+    color: rgb(255, 255, 255);
+}
+
+.pagination__item:last-child a {
+    color: #221f1f;
 }
 
 /*FOOTER*/
