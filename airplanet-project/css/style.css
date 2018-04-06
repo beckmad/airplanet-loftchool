@@ -754,3 +754,38 @@ label {
     color: #221f1f;
     font-weight: 300;
 }
+
+/*SECTION.BRANDS*/
+
+.brands {
+    border: 1px solid black;
+}
+
+.brands__headline {
+    font-size: 49px;
+    font-weight: bold;
+    color: rgb(34, 31, 31);
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.brands__list {
+    list-style: none;
+    margin-top: 30px;
+    padding: 0;
+    background: green;
+}
+
+.brands__item {
+    vertical-align: top;
+    margin-left: 60px;
+    width: 236px;
+    height: 100px;
+    display: inline-block;
+    background: red;
+    text-align: center;
+    position: relative;
+}
+
+.brands__img {
+}
