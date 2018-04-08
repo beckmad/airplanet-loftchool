@@ -572,25 +572,38 @@ a.header__info:hover {
 }
 
 .review__form {
-    border: 1px solid red;
     width: 560px;
     margin-left: auto;
     margin-right: auto;
 }
-.review__top {
-    border: 1px solid green;
-}
-.review__col-2 {
-    float: left;
-    width: 50%;
+
+.review__col-1 {
+    display: inline-block;
+    width: 270px;
 }
 
+.review__col-2 {
+    display: inline-block;
+    width: 270px;
+    margin-left: 16px;
+}
 .review__middle {
+    margin-top: 17px;
     border: 1px solid gold;
 }
 
+
+
+.review__radio {
+    text-align-last: left;
+    display: inline-block;
+    border: 1px solid yellow;
+}
+
 .review__bottom {
-    border: 1px dotted deeppink;
+    border: 1px solid black;
+    text-align: right;
+    display: inline-block;
 }
 
 .review__input {
@@ -603,14 +616,38 @@ a.header__info:hover {
 .review__input:focus {
     border-color: #4b73b5;
 }
-/*.review__input-name, .review__input-surname {*/
-    /*height: 45px;*/
-/*}*/
+.review__height-width {
+    width: 560px;
+    height: 90px;
+}
+
 label {
     background: yellow;
     margin: 0;
     padding: 0;
 }
+.review__btn {
+    border: none;
+    width: 154px;
+    height: 45px;
+    background-color: rgb(75, 115, 181);
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+}
+
+.review__btn:after {
+    content: "";
+    position: absolute;
+    background: url("../img/icons/rate/flower.png") no-repeat;
+    top: 5px;
+    left: 120px;
+    display: block;
+    width: 30px;
+    height: 30px;
+
+}
+
 
 /*BREADCRUMB*/
 
@@ -707,6 +744,10 @@ label {
     left: 0;
     border-radius: 50%;
 }
+.crew__avatar:hover::after {
+    background: none;
+    transition: 1.5s;
+}
 
 .crew__avatar-img {
     height: 100%;
@@ -726,7 +767,7 @@ label {
 }
 
 .crew__full-name {
-    width: 235px;
+    width: 260px;
     margin-left: auto;
     margin-right: auto;
     color: rgb(34, 31, 31);
@@ -773,19 +814,81 @@ label {
     list-style: none;
     margin-top: 30px;
     padding: 0;
-    background: green;
 }
 
 .brands__item {
     vertical-align: top;
     margin-left: 60px;
+    margin-bottom: 30px;
     width: 236px;
     height: 100px;
     display: inline-block;
-    background: red;
     text-align: center;
+    border: 1px solid black;
+    position: relative;
+}
+.brands__img {
     position: relative;
 }
 
-.brands__img {
+.brands__item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba( 0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
+/*INTRO*/
+
+.wall {
+    background: url("../img/content/kzhhnb6xsqi-margo-brodowicz.png") no-repeat 0 0;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+.wall__logo {
+    position: absolute;
+    width: 210px;
+    height: 270px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wall__img {
+    height: 225px;
+    background: url("../img/logo_intro.png") no-repeat 50% 50%;
+}
+
+.wall__btn {
+    display: block;
+    height: 45px;
+    border: 1px solid rgb(28, 91, 195);
+    border-radius: 3px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(28, 91, 196);
+    line-height: 45px;
+    position: relative;
+    text-decoration: none;
+}
+
+.wall__btn:after {
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 15px;
+    top: 15px;
+    left: 172px;
+    background: url("../img/icons/main_icon.png") no-repeat 0 0;
+}
+
