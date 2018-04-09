@@ -885,7 +885,9 @@ label {
     line-height: 45px;
     position: relative;
     text-decoration: none;
+    letter-spacing: 3px;
 }
+
 
 .wall__btn:after {
     content: "";
@@ -893,7 +895,7 @@ label {
     height: 14px;
     width: 15px;
     top: 15px;
-    left: 172px;
+    left: 171px;
     background: url("../img/icons/main_icon.png") no-repeat 0 0;
 }
 
