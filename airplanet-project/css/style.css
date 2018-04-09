@@ -40,7 +40,6 @@ body {
     width: 1100px;
     margin: 0 auto;
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
 .clearfix::after {
@@ -691,7 +690,6 @@ label {
 
 .content-right {
     float: right;
-    border: 1px solid red;
     width: 900px;
 }
 /*SECTION.CREW*/
@@ -798,9 +796,7 @@ label {
 
 /*SECTION.BRANDS*/
 
-.brands {
-    border: 1px solid black;
-}
+
 
 .brands__headline {
     font-size: 49px;
@@ -824,22 +820,31 @@ label {
     height: 100px;
     display: inline-block;
     text-align: center;
-    border: 1px solid black;
     position: relative;
+    filter: grayscale(100%);
 }
-.brands__img {
-    position: relative;
+.brands__item:hover {
+    filter: grayscale(0);
+    transition: .4s;
 }
 
-.brands__item::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: rgba( 0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
+.brands__item-1 {
+    background: url("../img/brands/bmp.png") no-repeat 50% 50%;
+}
+.brands__item-2 {
+    background: url("../img/brands/tetra.png") no-repeat 50% 50%;
+}
+.brands__item-3 {
+    background: url("../img/brands/sibir.png") no-repeat 50% 50%;
+}
+.brands__item-4 {
+    background: url("../img/brands/oneair.png") no-repeat 50% 50%;
+}
+.brands__item-5 {
+    background: url("../img/brands/bingair.png") no-repeat 50% 50%;
+}
+.brands__item-6 {
+    background: url("../img/brands/ural.png") no-repeat 50% 50%;
 }
 
 /*INTRO*/
@@ -892,3 +897,13 @@ label {
     background: url("../img/icons/main_icon.png") no-repeat 0 0;
 }
 
+.wall__btn:hover::after {
+    background: url("../img/icons/main_icon_hover.png") 0 0 no-repeat;
+    transition: .4s;
+ }
+
+.wall__btn:hover {
+    background: rgb(28, 91, 196);
+    transition: .4s;
+    color: white;
+}
