@@ -884,23 +884,25 @@ label {
 
 /*INTRO*/
 
+.body__intro {
+    background-color: rgb(239, 242, 249);
+}
+
 .wall {
     background: url("../img/content/kzhhnb6xsqi-margo-brodowicz.png") no-repeat 0 0;
     background-size: cover;
     height: 100%;
     width: 100%;
-    position: relative;
+    padding-top: 265px;
+    padding-bottom: 265px;
 
 }
 
-.wall__logo {
-    position: absolute;
+.wall__entrance {
+    margin-left: auto;
+    margin-right: auto;
     width: 210px;
     height: 270px;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .wall__img {
@@ -913,7 +915,7 @@ label {
     height: 45px;
     border: 1px solid rgb(28, 91, 195);
     border-radius: 3px;
-    /*padding-left: 20px;*/
+    padding-left: 20px;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
@@ -922,26 +924,27 @@ label {
     position: relative;
     text-decoration: none;
     letter-spacing: 3px;
+    transition: .2s;
 }
 
 
 .wall__btn:after {
     content: "";
     position: absolute;
-    height: 14px;
-    width: 15px;
+    height: 18px;
+    width: 18px;
     top: 15px;
-    left: 171px;
-    background: url("../img/icons/main_icon.png") no-repeat 0 0;
+    left: 173px;
+    background: url("../img/icons/intro/sprite__intro.png") no-repeat -19px -73px;
 }
 
 .wall__btn:hover::after {
-    background: url("../img/icons/main_icon_hover.png") 0 0 no-repeat;
-    transition: .4s;
+    background-position: -19px -20px;
+    transition: .2s;
  }
 
 .wall__btn:hover {
     background: rgb(28, 91, 196);
-    transition: .4s;
+    transition: .2s;
     color: white;
 }
