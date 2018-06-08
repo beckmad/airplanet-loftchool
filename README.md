@@ -2,7 +2,7 @@
 
 **Loftschool** - Level 1
 
-**Training Project:** Airplanet
+**Training Project:** Airplanet (first project)
 
 **Description:** Float, Animation
 
